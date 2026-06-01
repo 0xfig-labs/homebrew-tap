@@ -5,21 +5,21 @@
 class Tide < Formula
   desc "High-speed RSS reader for the terminal"
   homepage "https://github.com/0xfig521/tide"
-  version "0.5.1"
+  version "0.6.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/0xfig521/tide/releases/download/v0.5.1/tide-darwin-amd64.tar.gz"
-      sha256 "975310e641c1624a9e711e398d0374ee4e5cd03c1adea28e9dc6bde39e88569b"
+      url "https://github.com/0xfig521/tide/releases/download/v0.6.0/tide-darwin-amd64.tar.gz"
+      sha256 "deab69c504b6dc7be60eb701166478fda51c47e1abbaaeec7a789ba41088d689"
 
       define_method(:install) do
         bin.install "tide"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/0xfig521/tide/releases/download/v0.5.1/tide-darwin-arm64.tar.gz"
-      sha256 "328f16c145f12c9ab74398f00ead0b2647dd395056a06a1ea2617ef1bbd4a0ea"
+      url "https://github.com/0xfig521/tide/releases/download/v0.6.0/tide-darwin-arm64.tar.gz"
+      sha256 "62176358c8e3131aa60dedb0c30f5f8b802974dd4380db5cd957523f58ee487e"
 
       define_method(:install) do
         bin.install "tide"
@@ -29,15 +29,15 @@ class Tide < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/0xfig521/tide/releases/download/v0.5.1/tide-linux-amd64.tar.gz"
-      sha256 "e4563db3025a96a487236668e71c9304cd90abc6eea82f5430b3f68f4ec93ba3"
+      url "https://github.com/0xfig521/tide/releases/download/v0.6.0/tide-linux-amd64.tar.gz"
+      sha256 "4a47a80cef0b3833bef31d20c7f1a4b5779e6a66ee195a1483d467f432e1335e"
       define_method(:install) do
         bin.install "tide"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/0xfig521/tide/releases/download/v0.5.1/tide-linux-arm64.tar.gz"
-      sha256 "b3fec14299fe2702c4600e9e75fb38e8ab8f70d3768847c78836cb1b937c41c9"
+      url "https://github.com/0xfig521/tide/releases/download/v0.6.0/tide-linux-arm64.tar.gz"
+      sha256 "d49b748cf234b985873c43f17c4360c69cf670ebe7432ea63967b9912d666475"
       define_method(:install) do
         bin.install "tide"
       end
